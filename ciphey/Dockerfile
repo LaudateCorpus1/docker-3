@@ -26,6 +26,7 @@ ENV LC_ALL C.UTF-8
 USER root
 
 RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+  apt-get install python -y \
   python3-pip sudo && \
   rm -rf /var/lib/apt/lists/*
 
